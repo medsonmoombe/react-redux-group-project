@@ -1,3 +1,34 @@
 .innerTable-row {
   border: 1px solid gray;
 }
+
+.leave-btn {
+  border: 1px solid hsl(0, 73%, 54%);
+  font-size: 15px;
+  border-radius: 5px;
+  color: hsl(0, 73%, 54%);
+  padding: 10px;
+  width: max-content;
+}
+
+.join-btn {
+  border: 1px solid rgb(56, 54, 54);
+  font-size: 15px;
+  border-radius: 5px;
+  color: rgb(56, 54, 54);
+  padding: 10px;
+  width: max-content;
+}
+
+.act-user {
+  width: max-content;
+  border: 1px solid gray;
+  padding: 5px;
+  background: blue;
+  color: #fff;
+  font-weight: 600;
+}
+
+.act-user {
+  width: fit-content;
+}

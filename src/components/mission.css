@@ -2,9 +2,16 @@ table,
 td,
 th {
   border: 1px solid;
+  padding: 20px;
+  width: auto;
 }
 
 table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
+  margin: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
