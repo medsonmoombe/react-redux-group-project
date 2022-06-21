@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './MissionCard.css';
 
 const MissionCard = ({ mission }) => {
   console.log(mission);
   return (
     <>
-      <tr key={mission.mission_id}>
+      <tr className="innerTable-row" key={mission.mission_id}>
         <td>{mission.mission_name}</td>
         <td>{mission.description}</td>
-        <td>Germany</td>
+        <td> </td>
       </tr>
     </>
   );

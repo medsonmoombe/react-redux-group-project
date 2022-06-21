@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import MissionCard from './Pages/MissionCard';
 import { FetchMissions } from '../redux/missions/MissionSlice';
+import './mission.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
@@ -13,11 +14,11 @@ const Missions = () => {
   }, []);
   return (
     <>
-      <table>
-        <thead>
-          <tr>
+      <table className="table">
+        <thead className="table-head">
+          <tr className="table-row">
             <th>Missions</th>
-            <th>Discription</th>
+            <th className="th">Description</th>
             <th>Status</th>
             <th> </th>
           </tr>

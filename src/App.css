@@ -26,10 +26,6 @@ code {
     monospace;
 }
 
-table, th, td {
-  border: 1px solid black;
-}
-
-th {
-  width: 33.33%;
+.App {
+  padding: 20px;
 }
