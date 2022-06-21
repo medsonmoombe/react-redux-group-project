@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DISPLAY_ROCKET = 'DISPLAY_ROCKET';
+const DISPLAY_ROCKET = 'react-redux-group-project/rockets/DISPLAY_ROCKET';
 const baseUrl = 'https://api.spacexdata.com/v3/rockets';
 
 const initialState = [];
@@ -15,7 +15,7 @@ export const displayRocket = () => async (dispatch) => {
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case DISPLAY_ROCKET:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }

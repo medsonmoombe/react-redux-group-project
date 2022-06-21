@@ -19,12 +19,33 @@
 }
 
 .navLogo {
-  width: 62px;
-  height: 62px;
+  width: 10%;
+  height: auto;
   padding: 0 2% 0 2%;
 }
 
 .missionNav {
   border-right: 2px solid rgb(44, 44, 204);
   padding-right: 5px;
+}
+
+.nav-links li .active {
+  text-decoration: underline;
+  color: rgb(156, 133, 7);
+}
+
+.rocketImg img {
+  width: 80%;
+  height: auto;
+  padding: 10px 0 0 25px;
+}
+
+.row2 {
+  padding: 12px 0;
+}
+
+.rockBtn {
+  background-color: blue;
+  color: white;
+  border: none;
 }
