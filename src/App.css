@@ -99,6 +99,13 @@ code {
   font-size: large;
 }
 
-.rocketList {
-  
+.rocketList li {
+  list-style: none;
+  border-bottom: solid 0.5px rgb(208, 203, 203);
+  display: block;
+}
+
+.rocketList ul {
+  padding: 0;
+  margin: 0;
 }
