@@ -29,6 +29,7 @@ code {
 .App {
   padding: 20px;
 }
+
 .navbar,
 .nav-links {
   display: flex;
