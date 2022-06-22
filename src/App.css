@@ -81,3 +81,8 @@ code {
   color: white;
   border: none;
 }
+
+.missionList,
+.rocketList {
+  border: solid 0.5px rgb(208, 203, 203);
+}
