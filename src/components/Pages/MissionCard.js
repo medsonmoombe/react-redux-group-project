@@ -9,7 +9,7 @@ const MissionCard = ({ mission }) => {
   return (
     <>
       <tr className="innerTable-row">
-        <td>{mission.mission_name}</td>
+        <td className="bord">{mission.mission_name}</td>
         <td>{mission.description}</td>
         <td className="btn-act">{mission.reserved ? <span className="act-user">Active User</span> : <span className="not-act"> Not a Member</span>}</td>
         <td>

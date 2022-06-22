@@ -2,6 +2,10 @@
   border: 1px solid gray;
 }
 
+.bord {
+  font-weight: 600;
+}
+
 .leave-btn {
   border: 1px solid hsl(0, 73%, 54%);
   font-size: 15px;
@@ -21,14 +25,30 @@
 }
 
 .act-user {
-  width: max-content;
-  border: 1px solid gray;
-  padding: 5px;
-  background: blue;
+  border: 1px solid darkturquoise;
+  border-radius: 10px;
+  padding: 6px;
+  background: darkturquoise;
   color: #fff;
   font-weight: 600;
+  font-size: 17px;
+}
+
+.not-act {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 6px;
+  background: grey;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .act-user {
   width: fit-content;
+}
+
+.btn-act {
+  width: 20%;
+  margin: auto;
 }
