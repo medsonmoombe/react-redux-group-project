@@ -53,4 +53,9 @@
 .missionList,
 .rocketList {
   border: solid 0.5px rgb(208, 203, 203);
+  font-size: large;
+}
+
+.rocketList {
+  
 }
