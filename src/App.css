@@ -31,7 +31,6 @@
 
 .nav-links li .active {
   text-decoration: underline;
-  color: rgb(156, 133, 7);
 }
 
 .rocketImg img {
@@ -48,4 +47,16 @@
   background-color: blue;
   color: white;
   border: none;
+}
+
+.reserved {
+  background-color: rgb(10, 146, 191);
+  color: white;
+  margin-right: 10px;
+  padding: 1px 3px;
+  border-radius: 10%;
+}
+
+.rockCancel {
+  border: 1px solid;
 }
