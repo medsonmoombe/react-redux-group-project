@@ -11,7 +11,7 @@ const MissionCard = ({ mission }) => {
       <tr className="innerTable-row">
         <td className="bord">{mission.mission_name}</td>
         <td>{mission.description}</td>
-        <td className="btn-act">{mission.reserved ? <span className="act-user">Active User</span> : <span className="not-act"> Not a Member</span>}</td>
+        <td className="btn-act">{mission.reserved ? <p className="act-user">Active User</p> : <p className="not-act">Not a Member</p>}</td>
         <td>
           {(
           mission.reserved ? <button type="button" className="leave-btn" onClick={() => dispatch(changeStatus(mission.mission_id))}>Leave mission</button> : <button type="button" className="join-btn" onClick={() => dispatch(changeStatus(mission.mission_id))}>Join mission</button>
@@ -23,7 +23,7 @@ const MissionCard = ({ mission }) => {
 };
 MissionCard.propTypes = {
   mission: PropTypes.shape({
-    mission_id: PropTypes.number,
+    mission_id: PropTypes.string,
     mission_name: PropTypes.string,
     description: PropTypes.string,
     reserved: PropTypes.bool,
