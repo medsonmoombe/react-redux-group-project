@@ -51,7 +51,7 @@
   margin: auto;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .act-user {
     border: 1px solid darkturquoise;
     border-radius: 10px;
@@ -60,11 +60,10 @@
     color: #fff;
     font-weight: 600;
     font-size: 10px;
-  }  
+  }
 
   .not-act {
     width: max-content;
     font-size: 10px;
-
   }
 }
