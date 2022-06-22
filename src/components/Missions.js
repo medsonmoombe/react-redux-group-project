@@ -6,7 +6,6 @@ import './mission.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
-  console.log(missions);
 
   const dispatch = useDispatch();
 
