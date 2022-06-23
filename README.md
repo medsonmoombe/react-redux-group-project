@@ -12,8 +12,8 @@
 - React
 - SpaceX API
 
-## Live Demo (if available)
-[Live Demo Link](Ccoming soon)
+## Live Demo 
+[Live Demo Link](https://sparkling-mermaid-bef88d.netlify.app)
 
 
 
