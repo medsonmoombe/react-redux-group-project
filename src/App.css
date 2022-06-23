@@ -63,13 +63,12 @@ code {
 
 .nav-links li .active {
   text-decoration: underline;
-  color: rgb(156, 133, 7);
 }
 
 .rocketImg img {
-  width: 80%;
+  width: 90%;
   height: auto;
-  padding: 10px 0 0 25px;
+  padding: 10px 0 0 35px;
 }
 
 .row2 {
@@ -82,12 +81,20 @@ code {
   border: none;
 }
 
+.reserved {
+  background-color: rgb(10, 146, 191);
+  color: white;
+  margin-right: 10px;
+  padding: 1px 3px;
+  border-radius: 10%;
+}
+
+.rockCancel {
+  border: 1px solid;
+}
+
 .missionList,
 .rocketList {
   border: solid 0.5px rgb(208, 203, 203);
   font-size: large;
-}
-
-.rocketList {
-  
 }
