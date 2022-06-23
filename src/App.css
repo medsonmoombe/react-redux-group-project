@@ -29,3 +29,64 @@ code {
 .App {
   padding: 20px;
 }
+<<<<<<< Updated upstream
+=======
+
+.navbar,
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar h3 {
+  padding-right: 36%;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 12px;
+  padding: 6px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.navLogo {
+  width: 10%;
+  height: auto;
+  padding: 0 2% 0 2%;
+}
+
+.missionNav {
+  border-right: 2px solid rgb(44, 44, 204);
+  padding-right: 5px;
+}
+
+.nav-links li .active {
+  text-decoration: underline;
+  color: rgb(156, 133, 7);
+}
+
+.rocketImg img {
+  width: 80%;
+  height: auto;
+  padding: 10px 0 0 25px;
+}
+
+.row2 {
+  padding: 12px 0;
+}
+
+.rockBtn {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.missionList,
+.rocketList {
+  border: solid 0.5px rgb(208, 203, 203);
+  font-size: large;
+}
+>>>>>>> Stashed changes
