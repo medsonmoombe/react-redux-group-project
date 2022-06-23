@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
   <Provider store={store}>
     <Router>
       <React.StrictMode>
@@ -19,3 +18,4 @@ root.render(
     </Router>
   </Provider>,
 );
+
