@@ -1,22 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import './ProfileMission.css';
+// import PropTypes from 'prop-types';
 
-const Profilemission = ({ reservedMission }) => {
-  <>
-    <li>
-      {
-        reservedMission.map((mission) => (
-          <li className="joined-mission" key={mission.mission_id}>
-            <span>{mission.mission_name}</span>
-          </li>
-        ))
-      }
+const Profilemission = () => {
+  const missions = useSelector((state) => state.missions);
+  const reservedMission = missions.filter((mission) => mission.reserved === true);
+  return (
+    <li className="res-mission">
+      {reservedMission.map((mission) => (
+        <span key={mission.mission_id}>{mission.mission_name}</span>
+      ))}
     </li>
-  </>;
-};
-
-Profilemission.propTypes = {
-  reservedMission: PropTypes
-    .arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])).isRequired,
+  );
 };
 export default Profilemission;
