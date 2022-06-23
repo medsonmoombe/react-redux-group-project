@@ -1,5 +1,6 @@
 import React from 'react';
 import Profilemission from './Profilemission';
+import RocketList from './Pages/RocketList';
 
 const Profiles = () => (
   <div className="profileContainer">
@@ -16,7 +17,7 @@ const Profiles = () => (
       <div className="rocketProfile col-6">
         <h3>My Rockets</h3>
         <div className="rocketList">
-          <ul><li>your list</li></ul>
+          <RocketList />
         </div>
       </div>
     </div>
