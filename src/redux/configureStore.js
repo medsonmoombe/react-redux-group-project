@@ -14,10 +14,4 @@ const store = configureStore({
 });
 export default store;
 const composeEnhancers = compose;
-
-// export default configureStore({
-//   reducer: {
-//     rockets: rocketReducer,
-//   },
-// },
 composeEnhancers(applyMiddleware(thunk));
