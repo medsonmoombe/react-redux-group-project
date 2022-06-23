@@ -1,19 +1,8 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { displayRocket, reserveRocket, cancelReserve } from '../redux/rockets/rockets';
+import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
-const Rockets = () => {
+const Rockets = ({ reserveRocketClick, cancelReserveClick }) => {
   const rockets = useSelector((state) => state.rockets);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(displayRocket());
-  }, []);
-  const reserveRocketClick = (rocket) => {
-    dispatch(reserveRocket(rocket));
-  };
-  const cancelReserveClick = (rocket) => {
-    dispatch(cancelReserve(rocket));
-  };
 
   return (
     <div className="row">
@@ -40,4 +29,9 @@ const Rockets = () => {
     </div>
   );
 };
+Rockets.propTypes = {
+  reserveRocketClick: PropTypes.func.isRequired,
+  cancelReserveClick: PropTypes.func.isRequired,
+};
+
 export default Rockets;
