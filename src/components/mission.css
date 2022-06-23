@@ -1,15 +1,15 @@
-table,
+.table,
 td,
-th {
+.th {
   border: 1px solid;
   padding: 20px;
   width: inherit;
 }
 
-table {
-  width: 80%;
+.table {
+  font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin: auto;
+  width: 80%;
 }
 
 tr:nth-child(even) {
