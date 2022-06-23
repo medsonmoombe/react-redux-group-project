@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { displayRocket } from '../redux/rockets/rockets';
+import { displayRocket, reserveRocket, cancelReserve } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -8,6 +8,13 @@ const Rockets = () => {
   useEffect(() => {
     dispatch(displayRocket());
   }, []);
+  const reserveRocketClick = (rocket) => {
+    dispatch(reserveRocket(rocket));
+  };
+  const cancelReserveClick = (rocket) => {
+    dispatch(cancelReserve(rocket));
+  };
+
   return (
     <div className="row">
       <hr />
@@ -17,10 +24,15 @@ const Rockets = () => {
             <div className="rocketImg col-sm-3">
               <img src={rocket.flickr_images} alt="rocketImg" />
             </div>
-            <div className="rockedata col-9">
+            <div className="rocketdata col-9">
               <h3>{rocket.rocket_name}</h3>
-              <p>{rocket.description}</p>
-              <button type="button" className="rockBtn">Reserve Rocket</button>
+              <p>
+                <span className="reserved" style={{ display: rocket.reserved ? 'inline-block' : 'none' }}>Reserved</span>
+                {rocket.description}
+
+              </p>
+              <button type="button" className="rockBtn" style={{ display: rocket.reserved ? 'none' : 'inline-block' }} onClick={() => reserveRocketClick(rocket)}>Reserve Rocket</button>
+              <button type="button" className="rockCancel" style={{ display: rocket.reserved ? 'inline-block' : 'none' }} onClick={() => cancelReserveClick(rocket)}>Cancel Reservation</button>
             </div>
           </div>
         </div>
