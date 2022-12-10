@@ -3,13 +3,13 @@ td,
 .th {
   border: 1px solid;
   padding: 20px;
-  width: inherit;
+  /* width: inherit; */
 }
 
 .table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 80%;
+  /* width: 80%; */
 }
 
 tr:nth-child(even) {
@@ -18,4 +18,15 @@ tr:nth-child(even) {
 
 thead {
   border-bottom: 3px solid gray;
+}
+
+
+@media (max-width: 768px) {
+  th, td {
+    font-size: 12px;
+  }
+
+  .not-act {
+    width: 10px;
+  }
 }
