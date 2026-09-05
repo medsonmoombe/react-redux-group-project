@@ -66,9 +66,9 @@ npx eslint .
 - LinkedIn: [@Emmanuel moombe](https://www.linkedin.com/in/emmanuel-moombe-821918230/)
 
  👤 **Author2** Precious Akams
-* GitHub: [@kamzzy](https://github.com/kamzzy)
-* Twitter:[@precious_akams](https://twitter.com/precious_akams)
-* LinkedIn:[Onyeagoziri Akams](https://www.linkedin.com/in/onyeagoziri-akams/)
+- GitHub: [@precious](https://github.com/preciousakams).
+- Twitter: [@precious_akams](https://twitter.com/precious_akams)
+- LinkedIn: [Precious Akams](https://www.linkedin.com/in/preciousakams/)
 
 
 ## Show your support
